@@ -750,26 +750,27 @@ body {
 .article img,
 main img,
 figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
 }
 
 /* Figure cards: fixed max-width inside article container */
 .figure-card {
   margin: 28px 0;
+  max-width: 680px;
 }
 .figure-card img {
-  width: 100%;
-  max-width: 680px;
-  height: auto;
-  border-radius: 8px;
+  width: 100% !important;
+  max-width: 680px !important;
+  height: auto !important;
+  border-radius: 8px !important;
 }
 .figure-card figcaption {
-  font-size: 0.875rem;
-  color: var(--c-muted);
-  margin-top: 8px;
-  line-height: 1.5;
+  font-size: 0.875rem !important;
+  color: var(--c-muted) !important;
+  margin-top: 8px !important;
+  line-height: 1.5 !important;
 }
 
 @media (max-width: 640px) {
