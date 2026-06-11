@@ -655,6 +655,17 @@ body {
   font-style: italic;
 }
 
+/* Make in-page checklist jumps visibly work */
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 96px; }
+#buyer-checklist:target, #cost-checklist:target, #plan-checklist:target, #risk-checklist:target, #security-checklist:target {
+  animation: targetPulse 1.2s ease-out;
+}
+@keyframes targetPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.28); background: rgba(37, 99, 235, 0.06); }
+  100% { box-shadow: 0 0 0 14px rgba(37, 99, 235, 0); background: transparent; }
+}
+
 /* --- Related Articles --- */
 .related-section {
   padding: 40px 0;
