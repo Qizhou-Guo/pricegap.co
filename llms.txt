@@ -3,30 +3,50 @@
 > PriceGap is an independent buyer-education site that explains real cost gaps in recurring digital products: hosting, domains, SaaS, VPNs, password managers, and software subscriptions.
 
 ## Core pages
-
-- [Home](https://pricegap.co/): overview of PriceGap's recurring-cost guides.
-- [About](https://pricegap.co/about.html): editorial positioning and site purpose.
-- [Affiliate Disclosure](https://pricegap.co/affiliate-disclosure.html): affiliate and editorial disclosure.
-- [Advertiser Information](https://pricegap.co/advertiser-info.html): information for affiliate networks and advertisers.
+- [Home](https://pricegap.co/)
+- [Domain](https://pricegap.co/domain/)
+- [Hosting & VPS](https://pricegap.co/hosting/)
+- [Password Managers](https://pricegap.co/password-managers/)
+- [SaaS](https://pricegap.co/saas/)
+- [VPN & Privacy](https://pricegap.co/vpn/)
 
 ## Category guides
-
-- [Hosting & VPS](https://pricegap.co/hosting/): hosting renewal, VPS, add-on, and 3-year cost guides.
-- [Domain](https://pricegap.co/domain/): domain renewal, privacy, transfer, DNS, and registrar-lock-in guides.
-- [SaaS](https://pricegap.co/saas/): monthly vs annual billing, per-seat pricing, add-ons, usage limits, cancellation windows, and switching-cost guides.
-- [VPN](https://pricegap.co/vpn/): VPN renewal, monthly vs multi-year, and free-vs-paid privacy guides.
-- [Password Managers](https://pricegap.co/password-managers/): individual vs family, browser-vs-paid, and renewal-cost guides.
+- [Domain](https://pricegap.co/domain/)
+- [Hosting & VPS](https://pricegap.co/hosting/)
+- [Password Managers](https://pricegap.co/password-managers/)
+- [SaaS](https://pricegap.co/saas/)
+- [VPN & Privacy](https://pricegap.co/vpn/)
 
 ## Featured buyer checklists
+- [Domain Renewal Price Checklist](https://pricegap.co/domain/domain-renewal-price-checklist.html)
+- [Domain Transfer vs Renewal Price Checklist](https://pricegap.co/domain/domain-transfer-vs-renewal-price.html)
+- [Cheap Web Hosting Renewal Fees Checklist](https://pricegap.co/hosting/cheap-web-hosting-renewal-fees-checklist.html)
+- [Hostinger Renewal Price Explained](https://pricegap.co/hosting/hostinger-renewal-price-explained.html)
+- [Hostinger vs InterServer 3-Year Cost](https://pricegap.co/hosting/hostinger-vs-interserver-3-year-cost.html)
+- [Password Manager Renewal Family Plan Checklist](https://pricegap.co/password-managers/password-manager-renewal-family-plan-checklist.html)
+- [Monthly vs Annual SaaS Subscription Checklist](https://pricegap.co/saas/monthly-vs-annual-saas-subscription-checklist.html)
+- [SaaS Subscription Cancellation Fees Checklist](https://pricegap.co/saas/saas-subscription-cancellation-fees.html)
+- [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
 
-- [Domain Renewal Price Checklist](https://pricegap.co/domain/domain-renewal-price-checklist.html): what to check before registering a domain name.
-- [Domain Transfer vs Renewal Price Checklist](https://pricegap.co/domain/domain-transfer-vs-renewal-price.html): transfer fees, ICANN costs, lock periods, and renewal price comparison before committing to stay or move.
-- [Monthly vs Annual SaaS Subscription Checklist](https://pricegap.co/saas/monthly-vs-annual-saas-subscription-checklist.html): how to compare annual discounts, seats, add-ons, and lock-in before committing.
-- [SaaS Subscription Cancellation Fees Checklist](https://pricegap.co/saas/saas-subscription-cancellation-fees.html): mid-term cancellation fees, prorated refunds, data export deadlines, seat removal, and what providers do not make clear.
-- [Cheap Web Hosting Renewal Fees Checklist](https://pricegap.co/hosting/cheap-web-hosting-renewal-fees-checklist.html): hosting intro price vs renewal cost checklist.
-- [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html): VPN auto-renew, refund, and plan-length checklist.
-- [Password Manager Renewal Checklist](https://pricegap.co/password-managers/password-manager-renewal-family-plan-checklist.html): individual vs family renewal-cost checklist.
+## All guides
+- [About PriceGap](https://pricegap.co/about.html)
+- [Advertiser Information](https://pricegap.co/advertiser-info.html)
+- [Affiliate Disclosure](https://pricegap.co/affiliate-disclosure.html)
+- [Domain Renewal Price Checklist](https://pricegap.co/domain/domain-renewal-price-checklist.html)
+- [Domain Transfer vs Renewal Price Checklist](https://pricegap.co/domain/domain-transfer-vs-renewal-price.html)
+- [Cheap Web Hosting Renewal Fees Checklist](https://pricegap.co/hosting/cheap-web-hosting-renewal-fees-checklist.html)
+- [Hostinger Renewal Price Explained](https://pricegap.co/hosting/hostinger-renewal-price-explained.html)
+- [Hostinger vs InterServer 3-Year Cost](https://pricegap.co/hosting/hostinger-vs-interserver-3-year-cost.html)
+- [Shared Hosting vs VPS Price Gap](https://pricegap.co/hosting/shared-hosting-vs-vps-price-gap.html)
+- [1Password Family vs Individual](https://pricegap.co/password-managers/1password-family-vs-individual.html)
+- [Password Manager Browser vs Paid](https://pricegap.co/password-managers/password-manager-price-gap-browser-vs-paid.html)
+- [Password Manager Renewal Family Plan Checklist](https://pricegap.co/password-managers/password-manager-renewal-family-plan-checklist.html)
+- [Privacy Policy](https://pricegap.co/privacy.html)
+- [Monthly vs Annual SaaS Subscription Checklist](https://pricegap.co/saas/monthly-vs-annual-saas-subscription-checklist.html)
+- [SaaS Subscription Cancellation Fees Checklist](https://pricegap.co/saas/saas-subscription-cancellation-fees.html)
+- [Free VPN vs Paid VPN Price Gap](https://pricegap.co/vpn/free-vpn-vs-paid-vpn-price-gap.html)
+- [NordVPN Monthly vs 2-Year Plan](https://pricegap.co/vpn/nordvpn-monthly-vs-2-year-plan.html)
+- [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
 
 ## Editorial notes
-
 PriceGap does not publish live price guarantees. Readers should verify current provider prices, renewal terms, refund policies, and advertiser availability before purchase.
