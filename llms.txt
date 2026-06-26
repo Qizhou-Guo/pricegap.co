@@ -22,6 +22,7 @@
 - [Domain Renewal Price Checklist](https://pricegap.co/domain/domain-renewal-price-checklist.html): what to check before registering a domain name.
 - [Domain Transfer vs Renewal Price Checklist](https://pricegap.co/domain/domain-transfer-vs-renewal-price.html): transfer fees, ICANN costs, lock periods, and renewal price comparison before committing to stay or move.
 - [Monthly vs Annual SaaS Subscription Checklist](https://pricegap.co/saas/monthly-vs-annual-saas-subscription-checklist.html): how to compare annual discounts, seats, add-ons, and lock-in before committing.
+- [SaaS Subscription Cancellation Fees Checklist](https://pricegap.co/saas/saas-subscription-cancellation-fees.html): mid-term cancellation fees, prorated refunds, data export deadlines, seat removal, and what providers do not make clear.
 - [Cheap Web Hosting Renewal Fees Checklist](https://pricegap.co/hosting/cheap-web-hosting-renewal-fees-checklist.html): hosting intro price vs renewal cost checklist.
 - [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html): VPN auto-renew, refund, and plan-length checklist.
 - [Password Manager Renewal Checklist](https://pricegap.co/password-managers/password-manager-renewal-family-plan-checklist.html): individual vs family renewal-cost checklist.
