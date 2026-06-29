@@ -35,6 +35,7 @@
 - [SaaS Seat Pricing: What Counts as a User and What the Real Per-Seat Cost Is](https://pricegap.co/saas/saas-seat-pricing-what-counts-as-a-user.html)
 - [SaaS Add-on Cost: What You Actually Need vs What Is Included](https://pricegap.co/saas/saas-add-on-cost-what-you-actually-need.html)
 - [VPN Annual vs Monthly: What the Real Cost Difference Actually Means](https://pricegap.co/vpn/vpn-annual-vs-monthly-real-cost.html)
+- [VPN Free Tier vs Paid: What the Real Cost Breakdown Looks Like](https://pricegap.co/vpn/vpn-free-tier-vs-paid-real-cost-breakdown.html)
 - [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
 
 ## All guides
@@ -64,6 +65,7 @@
 - [Free VPN vs Paid VPN Price Gap](https://pricegap.co/vpn/free-vpn-vs-paid-vpn-price-gap.html)
 - [NordVPN Monthly vs 2-Year Plan](https://pricegap.co/vpn/nordvpn-monthly-vs-2-year-plan.html)
 - [VPN Annual vs Monthly: What the Real Cost Difference Actually Means](https://pricegap.co/vpn/vpn-annual-vs-monthly-real-cost.html)
+- [VPN Free Tier vs Paid: What the Real Cost Breakdown Looks Like](https://pricegap.co/vpn/vpn-free-tier-vs-paid-real-cost-breakdown.html)
 - [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
 
 ## Editorial notes
