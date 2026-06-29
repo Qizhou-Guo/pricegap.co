@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hosting Migration & Backup Fee Checklist: What Hosts Charge</title>
+  <meta name="description" content="A hosting migration and backup fee checklist covering what hosts actually charge for site migration, automated backup retention, on-demand backup restoration, DNS changeover time, and the line items that hide in the renewal invoice.">
+  <link rel="canonical" href="https://pricegap.co/hosting/hosting-migration-backup-fee-checklist.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Hosting Migration & Backup Fee Checklist: What Hosts Charge",
+    "description": "A hosting migration and backup fee checklist covering what hosts actually charge for site migration, automated backup retention, on-demand backup restoration, DNS changeover time, and the line items that hide in the renewal invoice.",
+    "datePublished": "2026-06-29",
+    "dateModified": "2026-06-29",
+    "author": {"@type": "Organization", "name": "PriceGap"},
+    "publisher": {"@type": "Organization", "name": "PriceGap"},
+    "mainEntityOfPage": "https://pricegap.co/hosting/hosting-migration-backup-fee-checklist.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Do web hosts charge a fee to migrate a site?", "acceptedAnswer": {"@type": "Answer", "text": "Many shared and managed WordPress hosts offer free migration for one site on the standard plan, with limits on plugin count, database size, or file count. VPS, dedicated, and cloud hosts usually do not include migration in the base plan; they may offer it as a paid add-on, bill it hourly, or expect the customer to migrate manually. The cheapest path is to do the migration yourself with a plugin or a manual file transfer, which costs time but no fee."}},
+      {"@type": "Question", "name": "How long does DNS changeover take when migrating a site?", "acceptedAnswer": {"@type": "Answer", "text": "DNS changeover (the TTL window) commonly takes 0 to 48 hours, depending on the registrar's TTL setting and how often resolvers honor it. Some users see propagation within minutes; others see partial propagation for up to 72 hours if the old TTL was set high. Lowering the TTL to 300 seconds at least 24 hours before the cutover reduces the worst-case window but does not eliminate it entirely."}},
+      {"@type": "Question", "name": "What do hosting backups actually cost?", "acceptedAnswer": {"@type": "Answer", "text": "Automated daily backups are often included free with shared and managed WordPress hosting, but retention is usually 7 to 30 days and restore is sometimes limited to a self-service window. On-demand restores, point-in-time restores, off-site backup storage, and longer retention windows are commonly paid add-ons. On VPS, dedicated, and cloud plans, backups are often a separate line item, billed as a percentage of server cost or as a per-GB storage fee."}},
+      {"@type": "Question", "name": "Can I restore a deleted site from the host's backup?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the host's backup policy actually covers the time you need. Many hosts keep automated backups for 7 to 30 days, and a few keep them for longer. The restore itself may be self-service, request-based, or billable as a paid recovery. Read the backup and retention policy before you need it; after the retention window has passed, no restore is possible even if the host is willing to help."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header"><div class="wrap--wide wrap"><a class="site-header__logo" href="/">Price<span>Gap</span></a><nav aria-label="Main navigation"><a href="/hosting/">Hosting</a><a href="/domain/">Domain</a><a href="/saas/">SaaS</a><a href="/vpn/">VPN</a><a href="/password-managers/">Password Managers</a><a href="/about.html">About</a><a href="/affiliate-disclosure.html">Disclosure</a></nav></div></header>
+  <main><div class="wrap">
+    <header class="article-header">
+      <div class="article-header__meta"><span class="article-header__date">2026-06-29</span><span class="article-header__tag">Hosting · Migration &amp; Backup</span><span class="article-header__readtime">⏱ 8 min read</span></div>
+      <h1>Hosting Migration &amp; Backup Fee Checklist: What Hosts Charge</h1>
+      <p class="lead">Hosting migration and backup fees are usually hidden behind a "free" headline on the pricing page, then appear as add-ons, recovery charges, or out-of-window restore fees when you actually need them. This checklist walks through what hosts typically charge for site migration, automated backup retention, on-demand backup restoration, and the DNS changeover window — so the real cost of moving, restoring, or recovering a site is on paper before it shows up on an invoice.</p>
+    </header>
+    <div class="tldr"><div class="tldr__label">Summary</div><div class="tldr__body"><ul><li>Free site migration is common on shared and managed WordPress hosting, but usually limited to one site and standard plugin and database sizes.</li><li>VPS, dedicated, and cloud hosting rarely include migration in the base plan; expect to pay hourly, by add-on, or to do it yourself.</li><li>Automated backups are usually included; longer retention, off-site storage, and point-in-time restore are usually paid.</li><li>On-demand restore may be self-service, request-based, or billable; verify the rule on the host's help center before you need a restore.</li><li>DNS changeover is a 0 to 48 hour window, longer with a high TTL; lower the TTL at least 24 hours before cutover to reduce the worst-case.</li></ul></div></div>
+
+    <div class="article-body">
+      <h2 id="short-answer">Short answer</h2>
+      <p>Hosting migration and backup costs hide in four places: site migration fees (free on most shared and managed WordPress hosts, paid or self-serve on VPS and cloud), automated backup retention (free for 7 to 30 days, paid for longer), on-demand backup restoration (free if self-service within retention, paid if request-based or outside retention), and DNS changeover downtime (zero in the best case, up to 48 hours in the worst case with a high TTL). The cheapest path is to plan for the worst case on each line: do the migration yourself if the host charges hourly, lower the TTL at least 24 hours before cutover, and confirm the retention window and restore process before you ever need a restore.</p>
+
+      <h2>What "migration" actually means at a web host</h2>
+      <p>Like VPN and password manager "switching," the word "migration" covers several different actions with different costs. The list below lines them up because the checklist below depends on which one you mean.</p>
+      <ul>
+        <li><strong>Site migration (file + database transfer):</strong> moving a website from one host to another, including files, databases, themes, plugins, and configuration. Usually free on shared and managed WordPress hosting, paid or self-serve on VPS, dedicated, and cloud.</li>
+        <li><strong>Email migration:</strong> moving mailboxes, mail forwarding rules, and DNS records for email hosting. Often a separate workflow with its own fee schedule.</li>
+        <li><strong>DNS migration:</strong> updating nameservers, A records, MX records, and TTL values at the registrar. Usually free at the registrar; downtime depends on TTL and resolver caching.</li>
+        <li><strong>Domain transfer:</strong> moving the domain registration itself from one registrar to another. Subject to its own fee, lock period, and 60-day post-transfer rule. See the <a href="/domain/domain-transfer-vs-renewal-price.html">domain transfer vs renewal</a> guide for the line items.</li>
+        <li><strong>SSL certificate migration:</strong> reissuing or re-installing an SSL certificate on the new host, or relying on the new host's free Let's Encrypt certificate.</li>
+      </ul>
+      <p>The rest of this checklist focuses on the site migration, backup retention, on-demand restore, and DNS changeover, because that is where the fees most often surprise new buyers.</p>
+
+      <h2>The cost lines that show up during a host migration</h2>
+      <p>The table below lines up the line items that affect the real cost of migrating a site, what each item typically looks like across shared, managed WordPress, VPS, dedicated, and cloud hosting, and what it is actually worth in dollars or hours. Numbers are illustrative ranges across common hosts; verify the actual fee schedule on the host's help center or migration page before initiating the move.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>Cost line item</th><th>Shared / managed WordPress</th><th>VPS / dedicated / cloud</th><th>What it is really worth</th></tr></thead>
+        <tbody>
+          <tr><td>Site migration (one site)</td><td>Usually free on the standard plan; limits on plugin count, database size, or file count may apply</td><td>Rarely included; offered as paid add-on, billed hourly, or self-serve only</td><td>Free migration is genuine on shared and managed WordPress; on VPS and cloud, expect to do it yourself or pay a fee.</td></tr>
+          <tr><td>Migration for additional sites</td><td>Often a paid add-on after the first free migration; sometimes $10 to $50 per site</td><td>Billed hourly or by request; $50 to $200+ per site on managed services</td><td>If the host allows only one free migration, the second site is a real cost, not a freebie.</td></tr>
+          <tr><td>Plugin and database size limits</td><td>Migration may be limited to a maximum number of plugins or a maximum database size; oversized sites fall outside free migration</td><td>Limits are usually based on server resources rather than a fixed plugin count</td><td>A 5 GB WooCommerce database may not fit inside a free shared migration limit.</td></tr>
+          <tr><td>Email migration</td><td>Often free as part of a hosting plan; may be a paid add-on or excluded entirely</td><td>Often excluded; mailboxes and forwarders must be set up manually or via a paid service</td><td>Mailbox counts above a free threshold (e.g., 10 or 25) are usually a paid add-on.</td></tr>
+          <tr><td>DNS changeover window</td><td>0 to 48 hours typical; 5 minutes to 72 hours in the worst case</td><td>0 to 48 hours typical; depends on registrar TTL</td><td>Lower the TTL to 300 seconds at least 24 hours before the cutover to reduce the worst-case window.</td></tr>
+          <tr><td>SSL certificate migration</td><td>Usually free via Let's Encrypt on the new host; some hosts charge for dedicated or wildcard certificates</td><td>Free Let's Encrypt available; dedicated and wildcard certificates are usually paid</td><td>A free Let's Encrypt certificate covers most sites; wildcard and EV certificates are an extra cost.</td></tr>
+          <tr><td>Automated backup retention</td><td>7 to 30 days on the standard plan; longer retention is often a paid add-on</td><td>Backups often a separate line item; 7-day retention is common on entry VPS plans</td><td>Retention windows shorter than your update cycle are a real risk; longer windows are usually paid.</td></tr>
+          <tr><td>Off-site backup storage</td><td>Rarely included; offered as a paid add-on or as a third-party integration (e.g., S3, Backblaze)</td><td>Usually a paid line item, billed as a percentage of server cost or per GB</td><td>Off-site backups protect against host-level failures; on-site backups do not.</td></tr>
+          <tr><td>On-demand backup restore</td><td>Self-service restore within retention is usually free; request-based restore may be paid</td><td>Self-service restore is normal on VPS and cloud; managed services may bill hourly</td><td>Test the restore path during onboarding, not during an outage.</td></tr>
+          <tr><td>Point-in-time restore</td><td>Rarely included; offered as an add-on on managed WordPress plans</td><td>Available on managed databases and some cloud plans; usually paid</td><td>Point-in-time restore is the only way to recover from a database corruption event that is not the latest change.</td></tr>
+          <tr><td>Malware scan and cleanup</td><td>Often included as a basic scan; full cleanup is usually a paid add-on or a one-time fee</td><td>Customer's responsibility unless a managed security add-on is purchased</td><td>A basic scan tells you there is a problem; cleanup is the part that costs.</td></tr>
+          <tr><td>Migration help desk hours</td><td>Often 24/7 on managed plans; business hours on entry-level shared plans</td><td>24/7 on managed cloud; business hours on unmanaged VPS</td><td>If the migration needs a senior engineer, business hours are a real cost in delayed cutover.</td></tr>
+        </tbody>
+      </table>
+      <p>The cheapest way to read this table is to assume migration is free on shared and managed WordPress hosting, self-serve on VPS and cloud, and that backup retention and on-demand restore are the line items that turn into fees the moment you actually need a restore.</p>
+
+      <h2>Site migration in detail</h2>
+      <p>Site migration is the most common reason a buyer interacts with the host's migration team. On shared and managed WordPress hosting, free migration is usually a single-site offer with limits. The standard offer typically covers one website, a maximum plugin count (often 25 to 50), a maximum database size (often 500 MB to 2 GB), and standard file types. WooCommerce sites with large product catalogs, multisite networks, and sites with custom database tables usually fall outside the free migration limit and require either a paid migration or a manual migration.</p>
+      <p>On VPS, dedicated, and cloud hosting, migration is rarely included in the base plan. The host may offer a paid migration add-on (often $50 to $200 per site), bill the migration hourly, or expect the customer to migrate manually using SSH, SFTP, and phpMyAdmin or a similar database tool. The cheapest path on VPS is usually to migrate yourself; the cheapest path on a fully managed cloud plan is to pay for the migration service and treat the cost as part of the onboarding.</p>
+      <p>The migration workflow below is the one that produces the cleanest cutover with the shortest downtime window.</p>
+      <ol>
+        <li><strong>Audit the source site.</strong> Inventory the plugins, themes, custom code, scheduled tasks, cron jobs, and external integrations. Anything not in the inventory is at risk of being lost during migration.</li>
+        <li><strong>Confirm the source site's database size and file count.</strong> Compare against the host's free migration limit. If the site exceeds the limit, plan for a paid migration or a self-serve path.</li>
+        <li><strong>Lower the TTL on the domain at the registrar.</strong> At least 24 hours before cutover, lower the TTL to 300 seconds (5 minutes). This reduces the worst-case DNS propagation window.</li>
+        <li><strong>Create the destination site on the new host.</strong> Install the stack, create the database, set the file structure, and apply the SSL certificate.</li>
+        <li><strong>Transfer files and database.</strong> Use a migration plugin (All-in-One WP Migration, Duplicator, Migrate Guru), manual SFTP + phpMyAdmin, or a paid migration service. Verify checksums and database integrity after the transfer.</li>
+        <li><strong>Update DNS records at the registrar.</strong> Point the domain to the new host's IP addresses and update the MX records if email is moving too.</li>
+        <li><strong>Test the new site on a hosts file override before changing DNS.</strong> Map the domain to the new host's IP in your local hosts file, browse the site, test forms, logins, and checkout flows. Catch errors before the public cutover.</li>
+        <li><strong>Cut over DNS during a low-traffic window.</strong> Lower traffic means fewer visitors see the propagation lag.</li>
+          <li><strong>Monitor DNS propagation and 5xx errors for 24 to 48 hours.</strong> Have a rollback plan: the old site stays live on the old host's IP for at least 48 hours, ready to switch back if the new site fails.</li>
+        <li><strong>Cancel the old hosting only after the new site is stable.</strong> Screenshot the cancellation confirmation, save the last backup, and verify no further charges on the next billing cycle.</li>
+      </ol>
+      <p>Skipping the hosts file test is the most common cause of "the site is broken after cutover" tickets. Skipping the rollback plan is the most common cause of "we have to rebuild from scratch" stories.</p>
+
+      <h2>DNS changeover time in detail</h2>
+      <p>DNS changeover is the part of the migration where downtime risk lives. The TTL (time to live) on the domain's DNS records determines how long resolvers cache the old IP before checking for a new one. A TTL of 86400 seconds (24 hours) means resolvers may keep returning the old IP for up to 24 hours after the records change; a TTL of 300 seconds (5 minutes) means resolvers check again within 5 minutes.</p>
+      <p>Most registrars default to a TTL of 3600 to 86400 seconds. Lowering the TTL to 300 seconds at least 24 hours before cutover gives resolvers time to pick up the shorter cache window, so when the records actually change, the worst-case window shrinks from 24 hours to 5 minutes. This is one of the few free actions that materially reduces downtime.</p>
+      <p>DNS propagation is rarely zero. Some resolvers honor the TTL strictly; others ignore it and use their own caching window. CDN providers, corporate networks, and mobile carrier resolvers sometimes cache aggressively. The realistic worst-case window is 0 to 48 hours, and the realistic best case is 5 to 30 minutes. Plan for the worst case and the cutover will feel smooth.</p>
+
+      <h2>Backup retention in detail</h2>
+      <p>Backup retention is the single most common hosting line item that buyers miss. Most shared and managed WordPress hosts include automated daily backups in the base plan, with retention windows of 7 to 30 days. Longer retention (60, 90, or 365 days), off-site storage, and point-in-time restore are commonly paid add-ons. VPS, dedicated, and cloud hosting often charge for backups as a separate line item, either as a percentage of server cost (commonly 10% to 20% of the plan) or as a per-GB storage fee.</p>
+      <p>The retention window should match the site's update cycle. A blog that updates weekly needs at least 7 days of retention to recover from a bad update. An ecommerce site that updates multiple times a day needs at least 30 days of retention, ideally with point-in-time restore, to recover from a payment processor bug or a database corruption event that is not caught immediately. A site that is updated infrequently can run on 7-day retention, but should still consider off-site backups because on-site backups do not protect against host-level failures.</p>
+      <p>The cheapest way to set up backups is to combine the host's automated backups with a third-party off-site backup plugin (UpdraftPlus, BackupBuddy, BlogVault) that writes to S3, Backblaze, or Google Drive. The third-party backup is independent of the host's infrastructure and survives a host-level failure. The cost is the storage fee at the third-party provider, which is usually a few dollars per month.</p>
+
+      <h2>On-demand restore in detail</h2>
+      <p>On-demand restore is the line item that turns into a fee the moment you need it. The restore process differs across hosts in three ways:</p>
+      <ul>
+        <li><strong>Self-service restore:</strong> the customer clicks a button in the host's control panel and restores a backup to the live site. This is the cheapest and fastest option, and it is standard on most managed WordPress hosts and on most VPS and cloud plans.</li>
+        <li><strong>Request-based restore:</strong> the customer submits a support ticket, and the host's team performs the restore. Some hosts include this in the base plan; others bill hourly for restoration work.</li>
+        <li><strong>Out-of-retention restore:</strong> the customer needs a backup from a date outside the host's retention window. Most hosts cannot perform this restore because the backup no longer exists.</li>
+      </ul>
+      <p>The cheapest way to handle restore is to test it during onboarding, not during an outage. A 15-minute restore test on a staging or test site confirms that the restore path actually works, the backups are intact, and the team knows the steps. A restore test that fails during an outage is the most expensive way to learn that the retention window was shorter than expected.</p>
+
+      <h2>What does not move when you switch hosts</h2>
+      <p>A useful way to plan a hosting migration is to list everything that does not survive the move. The inventory below is the list of items that have to be rebuilt or reconfigured on the new host.</p>
+      <ul>
+        <li><strong>Server-level configuration:</strong> PHP version, memory limits, max execution time, Apache or Nginx rules, .htaccess rewrites. Rebuilt manually on the new host.</li>
+        <li><strong>Email accounts and forwarders:</strong> rebuilt manually unless the host offers a free mailbox migration. Mailbox passwords reset.</li>
+        <li><strong>DNS records:</strong> A records, AAAA records, MX records, TXT records (SPF, DKIM, DMARC), CNAMEs. Updated at the registrar, not at the host.</li>
+        <li><strong>SSL certificate:</strong> reissued or re-installed on the new host. Let's Encrypt certificates are usually reissued automatically; dedicated and wildcard certificates are manual.</li>
+        <li><strong>Scheduled tasks and cron jobs:</strong> rebuilt on the new host's cron scheduler. Cron expressions and execution environments differ across hosts.</li>
+        <li><strong>Backups taken on the old host:</strong> do not transfer to the new host. Download the most recent backup before canceling the old plan.</li>
+        <li><strong>Control panel preferences:</strong> access logs, error log retention, hotlink protection, and rate-limiting rules. Rebuilt on the new host.</li>
+        <li><strong>Staging environments:</strong> rebuilt on the new host. Some hosts include staging in the base plan; others charge separately.</li>
+        <li><strong>Email authentication (SPF, DKIM, DMARC):</strong> updated at the registrar's DNS records when the email host changes. Failure to update causes email to land in spam.</li>
+      </ul>
+      <p>The dollar cost of these items is usually zero or small, but the hour cost is real, and it is the part that migrations most often underestimate. A simple WordPress site with one mailbox and a Let's Encrypt certificate is looking at one to three hours. A WooCommerce site with 10 mailboxes, custom cron jobs, and a dedicated IP is looking at half a day or more.</p>
+
+      <h2>Affiliate-aware note: CJ-partner providers and hosting migration</h2>
+      <p>PriceGap currently does not claim current advertiser approval with any hosting provider, and this article contains no advertiser checkout links. For context, providers tracked as potential CJ advertiser candidates — such as Hostinger, Interserver, and eUKhost — are part of a separate advertiser-application workflow. If a future affiliate link is added to this page, it would be a tracked link to a specific provider's migration, backup, or pricing page, and it would be labeled accordingly in the disclosure. The decision to migrate a site should be based on your own workload, retention needs, restore process, and migration help quality, not on which provider pays a commission.</p>
+
+      <h2>Common migration mistakes to avoid</h2>
+      <p>The pattern of mistakes below shows up repeatedly in user reports and support tickets. Each is cheap to avoid once you see it.</p>
+      <ul>
+        <li><strong>Migrating without testing the new site on a hosts file override.</strong> The hosts file test catches errors before the public cutover. Skipping it is the most common cause of "the site is broken after cutover" tickets.</li>
+        <li><strong>Forgetting to lower the TTL at least 24 hours before cutover.</strong> A high TTL means up to 24 hours of resolver caching on the old IP, even after the records change. Lowering the TTL in advance is the cheapest downtime reduction available.</li>
+        <li><strong>Canceling the old host before the new site is stable.</strong> The old host should stay live for at least 48 hours after cutover, ready to roll back if the new site fails.</li>
+        <li><strong>Assuming "free migration" covers all sites and database sizes.</strong> Free migration is usually one site with limits on plugin count, database size, and file count. Verify the limits before scheduling the migration.</li>
+        <li><strong>Forgetting to update email DNS records (SPF, DKIM, DMARC).</strong> When the email host changes, the SPF, DKIM, and DMARC records at the registrar must be updated or new email will land in spam.</li>
+        <li><strong>Skipping the backup retention check.</strong> The host's retention window may be shorter than expected. Verify the retention policy before you need a restore.</li>
+        <li><strong>Not testing the restore path during onboarding.</strong> A restore test on a staging site confirms the path works. Discovering it does not work during an outage is the most expensive way to learn the lesson.</li>
+        <li><strong>Forgetting that backups do not transfer between hosts.</strong> Download the most recent backup from the old host before canceling. The new host starts with a fresh backup schedule.</li>
+        <li><strong>Assuming Let's Encrypt is automatic.</strong> Most hosts issue Let's Encrypt automatically, but some require a manual click in the control panel to enable it.</li>
+        <li><strong>Ignoring cron jobs and scheduled tasks.</strong> Cron expressions and execution environments differ across hosts. Scheduled tasks that worked on the old host may not run on the new host without reconfiguration.</li>
+      </ul>
+
+      <h2>Buyer checklist: hosting migration and backup</h2>
+      <section id="migration-checklist" class="affiliate-section"><ol><li>Audit the source site: plugins, themes, custom code, scheduled tasks, cron jobs, mailbox count, and external integrations. Anything not in the inventory is at risk of being lost during migration.</li><li>Confirm the source site's database size and file count against the host's free migration limit. If the site exceeds the limit, plan for a paid migration or a self-serve path.</li><li>Lower the TTL on the domain at the registrar to 300 seconds at least 24 hours before cutover. This reduces the worst-case DNS propagation window.</li><li>Confirm the destination host's backup retention window, restore process, and self-service restore availability before the cutover. Plan for a third-party off-site backup if the host's retention is short.</li><li>Run a self-service restore test on a staging or test site before the cutover. Confirm the path works, the backup is intact, and the team knows the steps.</li><li>Transfer files and database using a migration plugin, manual SFTP + phpMyAdmin, or the host's paid migration service. Verify checksums and database integrity after the transfer.</li><li>Test the new site on a hosts file override (map the domain to the new IP locally) before changing public DNS. Catch errors before the cutover.</li><li>Update DNS records at the registrar: A records, AAAA records, MX records, SPF, DKIM, and DMARC. Verify email deliverability with a test send after cutover.</li><li>Cut over DNS during a low-traffic window and monitor 5xx errors and resolver behavior for 24 to 48 hours. Keep the old host live as a rollback target for at least 48 hours.</li><li>Only cancel the old host after the new site is stable, the last backup is downloaded, and the next billing cycle confirms no further charges. Screenshot the cancellation confirmation.</li></ol><a class="affiliate-item__link" href="#migration-checklist">Use this hosting migration and backup checklist</a><p class="affiliate-disclosure">Affiliate disclosure: PriceGap is an independent buyer-education site. This article contains no advertiser checkout links, does not claim a current sponsor relationship with any hosting provider, and does not quote fixed live prices, migration fees, retention windows, or restore charges. Migration policies, backup retention, restore processes, and DNS-related rules change frequently; verify current terms directly with the provider before scheduling a migration or relying on a restore.</p></section>
+    </div>
+    <aside class="related-guides"><h2>Related price gap guides</h2><ul><li><a href="/hosting/cheap-web-hosting-renewal-fees-checklist.html">Cheap hosting renewal fees checklist</a> — intro prices, renewal terms, add-ons, and total cost before checkout.</li><li><a href="/hosting/hosting-auto-renewal-vs-manual-renewal-real-cost.html">Hosting auto-renewal vs manual renewal</a> — the renewal rate, the grace window, and the downgrade path.</li><li><a href="/hosting/hostinger-renewal-price-explained.html">Hostinger renewal price explained</a> — the real cost after the first year.</li><li><a href="/hosting/shared-hosting-vs-vps-price-gap.html">Shared hosting vs VPS</a> — when the cheap plan becomes expensive and a VPS path makes sense.</li><li><a href="/hosting/hosting-email-what-you-pay-for-vs-whats-free.html">Hosting email vs free email</a> — what "free email" with hosting really means.</li><li><a href="/hosting/website-builder-vs-wordpress-real-cost.html">Website builder vs WordPress real cost</a> — 24-month comparison of builders against self-hosted WordPress.</li><li><a href="/domain/domain-transfer-vs-renewal-price.html">Domain transfer vs renewal price</a> — registrar transfer cost, ICANN fee, lock periods, and DNS downtime.</li><li><a href="/hosting/">Hosting &amp; VPS Price Gap Guides</a> — full category index for renewal, VPS upgrade, 36-month cost, and migration decisions.</li></ul></aside>
+  </div></main>
+  <footer class="site-footer"><div class="wrap--wide wrap"><div class="site-footer__brand">PriceGap</div><ul class="site-footer__links"><li><a href="/">Home</a></li><li><a href="/hosting/">Hosting</a></li><li><a href="/domain/">Domain</a></li><li><a href="/saas/">SaaS</a></li><li><a href="/vpn/">VPN</a></li><li><a href="/password-managers/">Password Managers</a></li><li><a href="/about.html">About</a></li><li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li><li><a href="/privacy.html">Privacy</a></li><li><a href="/advertiser-info.html">Advertiser Info</a></li></ul><p class="site-footer__copy">© 2026 PriceGap · Independent price-transparency guides for hosting, domains, SaaS, VPNs, password managers, and software.</p></div></footer>
+</body>
+</html>
