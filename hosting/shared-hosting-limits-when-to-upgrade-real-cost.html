@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shared Hosting Limits: When to Upgrade and What It Costs</title>
+  <meta name="description" content="Shared hosting limits explained: CPU, RAM, inode, bandwidth, MySQL, email, and process limits, what triggers each warning, when an upgrade is worth the money, and what the upgrade really costs over 24 months.">
+  <link rel="canonical" href="https://pricegap.co/hosting/shared-hosting-limits-when-to-upgrade-real-cost.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Shared Hosting Limits: When to Upgrade and What It Costs",
+    "description": "Shared hosting limits explained: CPU, RAM, inode, bandwidth, MySQL, email, and process limits, what triggers each warning, when an upgrade is worth the money, and what the upgrade really costs over 24 months.",
+    "datePublished": "2026-06-30",
+    "dateModified": "2026-06-30",
+    "author": {"@type": "Organization", "name": "PriceGap"},
+    "publisher": {"@type": "Organization", "name": "PriceGap"},
+    "mainEntityOfPage": "https://pricegap.co/hosting/shared-hosting-limits-when-to-upgrade-real-cost.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "When is it worth upgrading from shared hosting?", "acceptedAnswer": {"@type": "Answer", "text": "Upgrade from shared hosting when the site starts hitting the same limit twice in any 30-day window: CPU throttling that slows the front page, inode exhaustion from a media-heavy site, bandwidth overage that triggers a suspension, MySQL connection limits that cause 500 errors, or repeated 503 errors under modest traffic. A single, one-off spike is usually a code or plugin problem, not an upgrade trigger; a recurring limit hit is a sizing signal that the plan can no longer absorb."}},
+      {"@type": "Question", "name": "What is the cheapest upgrade path from shared hosting?", "acceptedAnswer": {"@type": "Answer", "text": "The cheapest upgrade path is usually to the next plan tier at the same host, not a jump to a full VPS. Most shared hosts have 3 to 5 plan tiers, and moving from entry shared to mid-tier shared typically doubles the resources at 1.5x to 2x the price, which is a better price-to-resource ratio than the unmanaged VPS often advertised as the next step. A VPS only becomes the better value when the site needs predictable performance, custom server configuration, or staging environments that the next shared tier still does not offer."}},
+      {"@type": "Question", "name": "How much does a shared hosting upgrade cost over 24 months?", "acceptedAnswer": {"@type": "Answer", "text": "Over 24 months, moving from an entry shared plan (often $3 to $8 per month at promo, renewing at $10 to $20) to a mid-tier shared plan (often $7 to $15 at promo, renewing at $18 to $35) typically adds about $120 to $360 to the total bill once the renewal price is counted. The cost difference is largely driven by the renewal rate, not the promo price, because the buyer enters year two at the higher standard rate whether they bought the entry or the mid-tier plan."}},
+      {"@type": "Question", "name": "What are the most common shared hosting limits that trigger an upgrade?", "acceptedAnswer": {"@type": "Answer", "text": "The most common shared hosting limits are CPU seconds per minute (often 50% to 100% of one core for short bursts), physical RAM per process (often 256 MB to 1 GB), inode count (often 100,000 to 500,000 files), monthly bandwidth (often 1 TB to 10 TB, sometimes unmetered on mid-tier), concurrent MySQL connections (often 25 to 100), email sending per hour (often 100 to 500 messages), and entry process count (often 20 to 50). The site does not need to hit every limit; the first limit that becomes a recurring problem is the one that signals the plan is too small."}},
+      {"@type": "Question", "name": "How do I tell if a slow site is a shared hosting limit or a code problem?", "acceptedAnswer": {"@type": "Answer", "text": "The cleanest signal is whether the slowness correlates with traffic. If the front page is slow at 2 AM with zero visitors, the limit is not the bottleneck; a slow query, a heavy plugin, an unoptimized image, or an external API call is. If the front page is fast at low traffic and slow at high traffic, the CPU, RAM, or concurrent connection limit is more likely. Most shared hosts expose usage graphs in the control panel; reading the graph at the time of slowness confirms the diagnosis."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header"><div class="wrap--wide wrap"><a class="site-header__logo" href="/">Price<span>Gap</span></a><nav aria-label="Main navigation"><a href="/hosting/">Hosting</a><a href="/domain/">Domain</a><a href="/saas/">SaaS</a><a href="/vpn/">VPN</a><a href="/password-managers/">Password Managers</a><a href="/about.html">About</a><a href="/affiliate-disclosure.html">Disclosure</a></nav></div></header>
+  <main><div class="wrap">
+    <header class="article-header">
+      <div class="article-header__meta"><span class="article-header__date">2026-06-30</span><span class="article-header__tag">Hosting · Shared Limits &amp; Upgrade</span><span class="article-header__readtime">⏱ 8 min read</span></div>
+      <h1>Shared Hosting Limits: When to Upgrade and What It Costs</h1>
+      <p class="lead">Shared hosting works because your site shares a server with hundreds of other sites, and the trade is that the server has to keep all of them within reasonable limits. The price is unbeatable for the first year; the catch is that the limits are real, and the day you start hitting one of them in production is the day the "cheap" plan starts to feel expensive. This guide walks through the limits that matter, what triggers each one, how to read the host's usage graph to confirm a real limit hit, and what the cheapest upgrade actually costs once the renewal price is on the bill.</p>
+    </header>
+    <div class="tldr"><div class="tldr__label">Summary</div><div class="tldr__body"><ul><li>Shared hosting caps CPU, RAM, inodes, bandwidth, MySQL connections, email sends, and entry processes, and the first recurring limit hit is the signal that the plan is undersized.</li><li>The cheapest upgrade is usually the next plan tier at the same host, not a jump to a VPS, because doubling the resources at 1.5x to 2x the price usually beats the unmanaged VPS math.</li><li>Over 24 months, a tier upgrade typically adds $120 to $360 to the total hosting bill once the renewal rate is counted, not the promo rate.</li><li>The cleanest way to diagnose the cause is whether slowness correlates with traffic; a slow site at zero visitors is a code problem, a slow site at peak traffic is a limit problem.</li><li>Before paying for an upgrade, fix what is cheap to fix: heavy plugins, unoptimized images, cron storms, runaway loops, and uncompressed assets. The cheapest upgrade is sometimes the one you do not need.</li></ul></div></div>
+
+    <div class="article-body">
+      <h2 id="short-answer">Short answer</h2>
+      <p>Upgrade shared hosting when the site starts hitting the same limit twice in any 30-day window — CPU throttling on the front page, inode exhaustion from a media-heavy site, bandwidth overage that triggers a suspension, MySQL connection limits that cause 500 errors, or repeated 503 errors under modest traffic. The cheapest upgrade is usually the next plan tier at the same host (often $7 to $15 per month at promo, renewing at $18 to $35), not a jump to a VPS, because the ratio of resources to price is meaningfully better than entry-to-unmanaged-VPS. Before paying for an upgrade, fix what is cheap to fix — heavy plugins, unoptimized images, cron storms, runaway loops, uncompressed assets — because the cheapest upgrade is sometimes the one you do not need.</p>
+
+      <h2>The shared hosting limit stack</h2>
+      <p>Shared hosting has more limits than most buyers realize, and they hit at different stages of a site's growth. The list below lines up the limits that matter, what usually triggers each one, and what the warning looks like before the host enforces the limit.</p>
+      <ul>
+        <li><strong>CPU seconds per minute (or per hour).</strong> Often 50% to 100% of one core for short bursts. Triggered by PHP workers under load, slow queries, search, image processing, or a cron storm. Warning: a slow front page under modest traffic, especially after a plugin update.</li>
+        <li><strong>Physical RAM per process.</strong> Often 256 MB to 1 GB per PHP worker. Triggered by heavy plugins, large WooCommerce catalogs, image-heavy themes, and unoptimized cron jobs. Warning: 500 or 503 errors immediately after a deploy or import.</li>
+        <li><strong>Inode count.</strong> Often 100,000 to 500,000 files. Triggered by email (each message is a file), cache directories, media libraries with thousands of small files, and session files. Warning: inability to send email or write to disk.</li>
+        <li><strong>Monthly bandwidth.</strong> Often 1 TB to 10 TB, sometimes unmetered on mid-tier plans. Triggered by large media files, hot-linked content, embedded videos, an unexpectedly viral post, or a bot scraping the site. Warning: an email at 80% of the cap, then a throttled or suspended site at 100%.</li>
+        <li><strong>Concurrent MySQL connections.</strong> Often 25 to 100 per database. Triggered by admin dashboards with many tabs, search crawlers, plugins that hold connections, and slow queries that hold connections longer than needed. Warning: intermittent database connection errors.</li>
+        <li><strong>Email sending per hour.</strong> Often 100 to 500 messages per hour per mailbox or per domain. Triggered by newsletter plugins, transactional mail, contact-form spam, and forwarded loops. Warning: bounced messages and queued mail.</li>
+        <li><strong>Entry processes (EP).</strong> Often 20 to 50 simultaneous PHP processes per account. Triggered by concurrent visitors, long-running cron jobs, search bots, and admin sessions. Warning: 508 resource limit reached errors in the error log.</li>
+      </ul>
+      <p>The site does not need to hit every limit; the first limit that becomes a recurring problem is the one that signals the plan is too small for the site as it currently runs.</p>
+
+      <h2>What each shared hosting limit really costs</h2>
+      <p>The table below lines up the limits that matter, the typical range on entry, mid-tier, and high-tier shared plans, what each limit usually costs to lift (a tier upgrade, an add-on, a paid fix), and what the warning actually feels like in production. Numbers are illustrative ranges across common shared hosts; verify the exact limits on your host's plan comparison page and in the resource-usage graph in the control panel.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>Limit</th><th>Entry shared (typical)</th><th>Mid-tier shared (typical)</th><th>High-tier shared (typical)</th><th>What it usually costs to lift</th></tr></thead>
+        <tbody>
+          <tr><td>CPU seconds per minute</td><td>~50% to 100% of one core (short bursts)</td><td>~150% to 250% (more headroom)</td><td>Higher; near-VPS levels on some hosts</td><td>Tier upgrade, often $5 to $15 per month at renewal</td></tr>
+          <tr><td>RAM per PHP process</td><td>256 MB to 512 MB</td><td>512 MB to 1 GB</td><td>1 GB to 2 GB</td><td>Tier upgrade, or moving heavy workloads off the shared plan</td></tr>
+          <tr><td>Inode count</td><td>100,000 to 250,000 files</td><td>250,000 to 500,000 files</td><td>500,000 to 1,000,000+ files</td><td>Tier upgrade, or cleaning caches, session files, and old email</td></tr>
+          <tr><td>Monthly bandwidth</td><td>1 TB to 3 TB; overage is throttled or billed</td><td>3 TB to 10 TB; some plans unmetered</td><td>10 TB+ or unmetered</td><td>Tier upgrade to unmetered; CDN offload (often a paid add-on)</td></tr>
+          <tr><td>Concurrent MySQL connections</td><td>25 to 50</td><td>50 to 100</td><td>100+ or its own database server</td><td>Tier upgrade, or fixing slow queries that hold connections</td></tr>
+          <tr><td>Email sends per hour</td><td>100 to 200 per hour</td><td>200 to 500 per hour</td><td>500+ or its own mail server</td><td>Tier upgrade, or moving transactional mail to a third-party (SES, Postmark, Mailgun)</td></tr>
+          <tr><td>Entry processes (concurrent PHP)</td><td>20 to 30</td><td>30 to 50</td><td>50 to 100+</td><td>Tier upgrade, or fixing cron storms and bot traffic</td></tr>
+          <tr><td>Number of websites</td><td>1</td><td>10 to 25</td><td>Unlimited (in practice, the limit above)</td><td>Tier upgrade; required to host the second site at all</td></tr>
+          <tr><td>Backup retention</td><td>7 days</td><td>14 to 30 days</td><td>30 days or paid add-on for longer</td><td>Tier upgrade, or a third-party backup plugin writing to S3</td></tr>
+          <tr><td>SSL and dedicated IP</td><td>Shared IP; free Let's Encrypt</td><td>Shared IP; free Let's Encrypt</td><td>Dedicated IP available (often a paid add-on)</td><td>Free Let's Encrypt covers most sites; dedicated IP is $2 to $5 per month on some hosts</td></tr>
+        </tbody>
+      </table>
+      <p>The cheapest way to read this table is to assume the next tier doubles most of these limits at 1.5x to 2x the renewal price, and that each tier jump up either buys a meaningful jump in resources or unlocks a feature the lower tier lacks. The exact step up from entry to mid-tier is usually the biggest single ratio improvement.</p>
+
+      <h2>The most common limit hits, and what they look like</h2>
+      <p>The seven limits above hit at different stages of site growth, and each one has a recognizable signature. Knowing the signature saves hours of guessing.</p>
+      <ul>
+        <li><strong>CPU throttling.</strong> The front page is fast in the morning and slow in the evening. Search results take 4 to 8 seconds. Admin actions time out. The host's resource usage graph shows a tall CPU spike at the same time as the slowness.</li>
+        <li><strong>RAM exhaustion.</strong> A single page load fails with a 500 or 503 error. Other pages load fine. The error log shows "Allowed memory size exhausted." Often triggered by a new plugin, a large import, or a search operation that loads too many posts at once.</li>
+        <li><strong>Inode exhaustion.</strong> Email starts bouncing with "disk quota exceeded." New uploads fail. Adding a plugin fails. The control panel shows the inode meter near full, usually because of an old email account that has accumulated years of messages, or a cache directory that has not been pruned.</li>
+        <li><strong>Bandwidth overage.</strong> The host sends an email at 80% of the cap, then throttles or suspends the site at 100%. The cause is often a hot-linked image on a third-party site, an embedded video, an unexpected viral post, or a bot scraping the site continuously.</li>
+        <li><strong>MySQL connection limits.</strong> Intermittent "Error establishing a database connection" messages. Admin is slow. Search is slow. The error log shows "too many connections." Often triggered by long-running queries, plugins that hold connections open, or admin sessions with many open tabs.</li>
+        <li><strong>Email rate limit.</strong> Outbound mail starts queuing. Newsletters take hours instead of minutes. Transactional mail arrives late. The host's mail log shows throttling or rejection at the SMTP layer.</li>
+        <li><strong>Entry process limit.</strong> 508 errors in the error log: "Resource temporarily unavailable." The site loads for some visitors but not others. Concurrent admin sessions, bot traffic, and cron jobs running at the same time are usually the cause.</li>
+      </ul>
+      <p>Each of these is a fixable problem, and the fix is sometimes cheaper than an upgrade. CPU and RAM are usually fixable by removing heavy plugins or fixing slow queries. Inodes are usually fixable by cleaning mail and caches. Bandwidth is usually fixable by offloading media to a CDN. MySQL is usually fixable by adding indexes or replacing a heavy plugin. Email rate is usually fixable by moving transactional mail off shared hosting.</p>
+
+      <h2>When a tier upgrade is genuinely worth paying for</h2>
+      <p>Some limit hits are real signals that the plan is too small for the site, not signals that something is broken. The list below is the most common cases where the upgrade is worth the money.</p>
+      <ul>
+        <li><strong>The site has outgrown the entry plan on every dimension.</strong> One site has grown into a portfolio with multiple WordPress installs, a WooCommerce catalog, an image-heavy portfolio, and a forum. The entry plan is too small. The mid-tier plan is the better value than three separate entry plans.</li>
+        <li><strong>The site is genuinely traffic-bound.</strong> Traffic has crossed 50,000 to 100,000 visits per month and the CPU meter is consistently at 60% to 90%. Optimizing further would only buy 10% to 20%; the upgrade buys 200%.</li>
+        <li><strong>The site runs WooCommerce or a real application stack.</strong> A typical WordPress blog runs comfortably on entry shared for years. A WooCommerce store with 1,000+ SKUs, a live search, and a heavy checkout does not. The mid-tier or high-tier plan is the right starting point, not the upgrade end-point.</li>
+        <li><strong>The site needs a second environment.</strong> The plan currently has no staging. The mid-tier plan includes staging. Moving the staging environment to a separate sub-account adds the same cost with more friction.</li>
+        <li><strong>The site needs better backup retention or restore options.</strong> The current retention is 7 days and the team's restore process has never been tested. The mid-tier plan offers 30-day retention, self-service restore, and sometimes off-site storage. The upgrade is a risk-management decision, not a performance decision.</li>
+      </ul>
+      <p>The unifying rule is that an upgrade is worth the money when the limit hit is recurring, the limit is structural to the plan, and the fix at the current plan is more expensive than the next tier.</p>
+
+      <h2>When the cheapest upgrade is the one you do not need</h2>
+      <p>The opposite case is also worth spelling out, because buyers pay for upgrades they did not need, then wonder why the bill is higher and the symptoms are unchanged. The list below is the cheapest fixes to try first, in roughly the order they pay off.</p>
+      <ul>
+        <li><strong>Audit plugins and themes.</strong> A single heavy plugin (popular examples include heavy SEO suites, social-sharing plugins, and analytics dashboards) can consume 20% to 40% of CPU on its own. Removing the heaviest one or replacing it with a lightweight alternative is often a free fix.</li>
+        <li><strong>Optimize the database.</strong> Adding indexes to slow queries, removing post revisions, transients, and orphaned metadata, and running an optimize table after the cleanup can recover significant MySQL headroom.</li>
+        <li><strong>Clean caches and old email.</strong> Inodes fill up because something is generating files faster than they are pruned. A cache plugin with no expiration, a backup plugin writing daily to disk, or an email account with years of unread messages are typical culprits.</li>
+        <li><strong>Offload media to a CDN.</strong> Bandwidth issues on an image-heavy site are usually a CDN problem, not a hosting problem. A free or paid CDN (Cloudflare, BunnyCDN, short.io, etc.) takes 80%+ of bandwidth off the origin server, often at lower cost than an upgrade.</li>
+        <li><strong>Move transactional email off shared hosting.</strong> A newsletter plugin or a contact-form spam loop is the most common cause of email rate limits. Moving transactional mail to SES, Postmark, or Mailgun is usually a few dollars a month and bypasses the shared hosting limit entirely.</li>
+        <li><strong>Trim cron jobs.</strong> A cron storm (many plugins running every 5 minutes) burns CPU on a schedule that does not need it. Most plugin cron schedules can be relaxed to every 15 or 30 minutes with no observable change in user behavior.</li>
+        <li><strong>Replace inefficient plugins.</strong> "Contact form" plugins, "related posts" plugins, and "social share" plugins vary widely in their resource footprint. Swapping the heaviest one for a leaner alternative often recovers 10% to 30% of CPU at no cost.</li>
+        <li><strong>Compress images and use modern formats.</strong> A 4 MB hero image served on every page load is bandwidth and CPU at the same time. Converting to WebP, lazy-loading below-the-fold images, and using srcset for responsive sizes recovers bandwidth and reduces render time.</li>
+      </ul>
+      <p>The pattern in this list is that most "the plan is too small" problems are partly caused by code, configuration, or asset choices on the buyer's side. A round of optimization often pushes the upgrade out by six to twelve months, and the savings on the bill fund the optimization work or the eventual upgrade.</p>
+
+      <h2>The 24-month cost of an upgrade</h2>
+      <p>The promo price on a hosting plan is rarely the price the buyer pays. The price they pay is the renewal price, billed in year two and year three. The table below lines up the entry and mid-tier plans at their promo and renewal prices, what a typical buyer pays over 24 months, and what the upgrade actually adds over the same period. Numbers are illustrative ranges across common shared hosts; verify the current prices on the host's plan page before deciding.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>Plan tier</th><th>Promo price (typical, year 1)</th><th>Renewal price (typical, year 2+)</th><th>Effective 24-month cost</th><th>Resource ratio (CPU / RAM / inode)</th></tr></thead>
+        <tbody>
+          <tr><td>Entry shared</td><td>$3 to $8 per month ($36 to $96 total in year 1)</td><td>$10 to $20 per month ($120 to $240 per year)</td><td>$156 to $336 over 24 months</td><td>1x baseline</td></tr>
+          <tr><td>Mid-tier shared</td><td>$7 to $15 per month ($84 to $180 total in year 1)</td><td>$18 to $35 per month ($216 to $420 per year)</td><td>$300 to $600 over 24 months</td><td>~2x to 3x the entry plan</td></tr>
+          <tr><td>High-tier shared</td><td>$15 to $30 per month ($180 to $360 total in year 1)</td><td>$35 to $70 per month ($420 to $840 per year)</td><td>$600 to $1,200 over 24 months</td><td>~4x to 5x the entry plan</td></tr>
+          <tr><td>Unmanaged VPS (entry)</td><td>$10 to $25 per month ($120 to $300 total in year 1)</td><td>$20 to $40 per month (some hosts flat-rate)</td><td>$240 to $600 over 24 months</td><td>Dedicated cores and RAM; trade is management time</td></tr>
+          <tr><td>Managed VPS (entry)</td><td>$30 to $60 per month ($360 to $720 total in year 1)</td><td>$40 to $80 per month (often flat-rate)</td><td>$720 to $1,440 over 24 months</td><td>Dedicated resources; support covers infrastructure, not app stack</td></tr>
+        </tbody>
+      </table>
+      <p>The cheapest way to read this table is that the tier upgrade from entry to mid-tier adds roughly $144 to $264 over 24 months, while the jump from shared to managed VPS adds $360 to $900. The mid-tier upgrade is the better value when the site does not need dedicated resources; the managed VPS is the better value when the site genuinely needs predictable resources or a support tier that covers more than infrastructure.</p>
+
+      <h2>Where shared hosting limits meet a domain or email problem</h2>
+      <p>An upgrade that ignores the domain and email side of the bill can cost more than the upgrade itself. The combination is common because most shared plans bundle a domain and a small number of mailboxes, and the renewal rates on each piece are independent.</p>
+      <ul>
+        <li><strong>Domain renewal.</strong> The first-year domain registration is often free with the plan; the renewal rate is the registrar's standard rate for the same TLD. A first-year "free" .com becomes a $12 to $25 renewal in year two, paid separately from the hosting plan.</li>
+        <li><strong>Mailbox limits.</strong> The mid-tier shared plan typically includes 10 to 50 mailboxes. Mailbox storage is usually capped at a per-mailbox size (often 1 GB to 10 GB), and storage above the cap is a paid add-on or requires deleting old messages.</li>
+        <li><strong>Mailbox migration on upgrade.</strong> Some hosts rebuild mailboxes when a plan changes. Screenshot the current mailbox list, forwarders, and DNS records before changing plans, so the new plan can be reconfigured identically.</li>
+        <li><strong>DNS continuity.</strong> Nameservers do not change with a plan upgrade, but some hosts expose extra DNS features (DNSSEC, wildcard, geo-routing) only on higher tiers. Plan migration may need a small DNS reconfiguration.</li>
+      </ul>
+      <p>The cheapest way to handle this combined bill is to keep the domain registered at a separate registrar with renewal reminders, keep mail storage lean (or move to a dedicated mail host for high-volume mailboxes), and check the host's migration policy before any plan change.</p>
+
+      <h2>The answer box</h2>
+      <p>Shared hosting limits are real, and they hit at different stages of site growth. The first limit that becomes a recurring problem is the one that signals the plan is undersized — most commonly CPU under traffic, inodes from media or mail, or MySQL connections under modest concurrent load. The cheapest fix is to optimize what is on the site (heavy plugins, slow queries, unoptimized media, cron storms), and the cheapest upgrade is the next plan tier at the same host rather than a jump to a VPS. Over 24 months, a tier upgrade typically adds $120 to $360 to the total bill once the renewal rate is counted, while a jump to managed VPS adds $360 to $900. The pattern that holds across both choices is that the upgrade is worth paying for when the limit hit is structural and recurring, and the fix at the current plan is more expensive than the next tier.</p>
+
+      <section id="shared-hosting-limits-checklist" class="affiliate-section"><h2>Buyer checklist: shared hosting limits and when to upgrade</h2><ol><li>Audit the host's resource usage graph for the last 30 days. Identify the limit that has been hit at least twice: CPU, RAM, inode, bandwidth, MySQL connections, email rate, or entry processes.</li><li>Confirm the limit hit is a plan-sizing problem and not a code problem. Cross-check the timing of slowness against the traffic graph; if the slow window has zero visitors, the bottleneck is code, not the plan.</li><li>Before paying for an upgrade, run one round of optimization: remove the heaviest plugin, add indexes to slow queries, clean caches and old email, lazy-load media, and trim cron schedules. Measure again 7 days later.</li><li>Compare the next plan tier at the same host against a jump to a VPS. The next plan tier usually doubles the resources at 1.5x to 2x the renewal price, which is the better ratio than entry-to-unmanaged-VPS for most sites.</li><li>Confirm the renewal rate of the new tier on the host's pricing page, not the promo checkout page. The renewal rate is what you will pay in year two and year three. Build the 24-month cost with renewal, not promo.</li><li>Test the upgrade on a single billing cycle if possible. Some hosts offer a prorated upgrade that lets the buyer move up and back within the cycle. If not, confirm the host's downgrade policy before upgrading.</li><li>After upgrading, set a calendar reminder at 60 days and again at 90 days to re-check the resource usage graph. The limit should clear; if it does not, the bottleneck was a code or asset problem that the upgrade did not fix.</li><li>Keep the domain registered at a separate registrar with its own renewal reminders, and keep mail storage lean. The hosting plan upgrade should not be the trigger for a domain lapse or a mailbox loss; both side bills run on their own schedules.</li></ol><a class="affiliate-item__link" href="#shared-hosting-limits-checklist">Use this shared hosting limits and upgrade checklist</a><p class="affiliate-disclosure">Affiliate disclosure: PriceGap is an independent buyer-education site. This article contains no advertiser checkout links, does not claim a current sponsor relationship with any hosting provider, and does not quote fixed live prices, plan tiers, or resource limits. Plan tiers, resource limits, CPU and RAM allocations, inode caps, bandwidth caps, MySQL connection limits, email rate limits, and renewal rates change frequently; verify current terms and your real usage data directly with the host before deciding on an upgrade.</p></section>
+
+    </div>
+    <aside class="related-guides"><h2>Related price gap guides</h2><ul><li><a href="/hosting/">Hosting &amp; VPS Price Gap Guides</a> — full category index for renewal, VPS upgrade, 36-month cost, and migration decisions.</li><li><a href="/hosting/shared-hosting-vs-vps-price-gap.html">Shared hosting vs VPS price gap</a> — when the cheap plan becomes expensive and a VPS path makes sense.</li><li><a href="/hosting/hosting-auto-renewal-vs-manual-renewal-real-cost.html">Hosting auto-renewal vs manual renewal</a> — the renewal rate, the grace window, and the downgrade path on the same plan.</li><li><a href="/saas/saas-subscription-cancellation-fees.html">SaaS subscription cancellation fees</a> — the same "cancel at the renewal moment" idea applied to SaaS billing.</li><li><a href="/vpn/vpn-server-switching-fee-checklist.html">VPN server switching fees</a> — the upgrade path when a plan no longer fits the user.</li></ul></aside>
+  </div></main>
+  <footer class="site-footer"><div class="wrap--wide wrap"><div class="site-footer__brand">PriceGap</div><ul class="site-footer__links"><li><a href="/">Home</a></li><li><a href="/hosting/">Hosting</a></li><li><a href="/domain/">Domain</a></li><li><a href="/saas/">SaaS</a></li><li><a href="/vpn/">VPN</a></li><li><a href="/password-managers/">Password Managers</a></li><li><a href="/about.html">About</a></li><li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li><li><a href="/privacy.html">Privacy</a></li><li><a href="/advertiser-info.html">Advertiser Info</a></li></ul><p class="site-footer__copy">© 2026 PriceGap · Independent price-transparency guides for hosting, domains, SaaS, VPNs, password managers, and software.</p></div></footer>
+</body>
+</html>
