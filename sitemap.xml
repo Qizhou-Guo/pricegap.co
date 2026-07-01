@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://pricegap.co/saas/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -237,6 +237,12 @@
   <url>
     <loc>https://pricegap.co/saas/saas-usage-based-billing-what-counts-as-a-unit.html</loc>
     <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pricegap.co/saas/saas-free-tier-real-cost-what-you-pay-when-you-scale.html</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
