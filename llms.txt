@@ -42,6 +42,7 @@
 - [VPN Annual vs Monthly: What the Real Cost Difference Actually Means](https://pricegap.co/vpn/vpn-annual-vs-monthly-real-cost.html)
 - [VPN Free Tier vs Paid: What the Real Cost Breakdown Looks Like](https://pricegap.co/vpn/vpn-free-tier-vs-paid-real-cost-breakdown.html)
 - [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
+- [VPN Device Limit Real Cost: How Many Devices You Actually Get](https://pricegap.co/vpn/vpn-device-limit-real-cost.html)
 
 ## All guides
 - [About PriceGap](https://pricegap.co/about.html)
@@ -78,6 +79,7 @@
 - [VPN Free Tier vs Paid: What the Real Cost Breakdown Looks Like](https://pricegap.co/vpn/vpn-free-tier-vs-paid-real-cost-breakdown.html)
 - [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
 - [VPN Server Switching Fee Checklist: What It Actually Costs](https://pricegap.co/vpn/vpn-server-switching-fee-checklist.html)
+- [VPN Device Limit Real Cost: How Many Devices You Actually Get](https://pricegap.co/vpn/vpn-device-limit-real-cost.html)
 - [Password Manager Family Plan Switching Cost Checklist](https://pricegap.co/password-managers/password-manager-family-plan-switching-cost-checklist.html)
 - [Hosting Migration & Backup Fee Checklist: What Hosts Charge](https://pricegap.co/hosting/hosting-migration-backup-fee-checklist.html)
 
