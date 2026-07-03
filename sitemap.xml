@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://pricegap.co/saas/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -266,6 +266,12 @@
   </url>
   <url>
     <loc>https://pricegap.co/password-managers/password-manager-breach-alert-cost-after-data-breach.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pricegap.co/saas/saas-invoice-surprise-hidden-admin-fees-and-seat-minimums.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
