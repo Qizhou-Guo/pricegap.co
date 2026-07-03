@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SaaS Usage-Based Billing: What Counts as a "Unit" and What the Real Cost Becomes When Usage Grows</title>
+  <title>SaaS Usage-Based Billing: What the Unit Really Costs</title>
   <meta name="description" content="SaaS usage-based billing explained: what counts as a unit, how API calls, records processed, GB transferred, messages, and compute-seconds are counted, how tiered vs graduated vs cumulative pricing differs, the overage math when usage doubles, and how to estimate real usage before signing up.">
   <link rel="canonical" href="https://pricegap.co/saas/saas-usage-based-billing-what-counts-as-a-unit.html">
   <link rel="stylesheet" href="../css/style.css">
@@ -11,7 +11,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "SaaS Usage-Based Billing: What Counts as a \"Unit\" and What the Real Cost Becomes When Usage Grows",
+    "headline": "SaaS Usage-Based Billing: What the Unit Really Costs",
     "description": "SaaS usage-based billing explained: what counts as a unit, how API calls, records processed, GB transferred, messages, and compute-seconds are counted, how tiered vs graduated vs cumulative pricing differs, the overage math when usage doubles, and how to estimate real usage before signing up.",
     "datePublished": "2026-06-30",
     "dateModified": "2026-06-30",
@@ -37,7 +37,7 @@
   <main><div class="wrap">
     <header class="article-header">
       <div class="article-header__meta"><span class="article-header__date">2026-06-30</span><span class="article-header__tag">SaaS · Usage-Based Billing</span><span class="article-header__readtime">⏱ 8 min read</span></div>
-      <h1>SaaS Usage-Based Billing: What Counts as a "Unit" and What the Real Cost Becomes When Usage Grows</h1>
+      <h1>SaaS Usage-Based Billing: What the Unit Really Costs</h1>
       <p class="lead">Usage-based pricing is the SaaS industry's favorite way to advertise a low number and then bill a much higher one. The pricing page shows "$0.001 per API call" or "$0.50 per GB processed" — a number that looks like rounding error next to a flat-rate plan. The number is real, but the unit, the counting method, the tier boundaries, the included credits, and the overage rate are usually buried two or three clicks away. This guide explains what a unit actually is in usage-based SaaS, the most common unit types, how tiered vs graduated vs cumulative pricing changes the bill at the same volume, the overage math when usage doubles, and how to estimate real usage before signing up for a plan that bills by the unit.</p>
     </header>
     <div class="tldr"><div class="tldr__label">Summary</div><div class="tldr__body"><ul><li>A unit is whatever the provider bills for: API calls, records, GB stored, GB transferred, messages, compute-seconds, transactions, documents parsed, or active workspaces. The unit that looks cheapest per 1,000 is often the most expensive per real workload.</li><li>Three pricing models share the same unit name but produce very different bills: tiered, graduated, and cumulative. The same volume of usage can cost 20% to 60% more under one model than another.</li><li>Usage-based is cheaper than flat-rate only when real usage sits below 40% to 80% of the flat-rate plan's included quota. Above the crossover, the flat-rate plan is usually cheaper because the per-unit cost is baked into the plan price.</li><li>Overage units are almost always priced higher than the units inside the free tier or the flat-rate plan, and the overage math compounds when usage doubles or triples.</li><li>Estimate real usage from a 30-day window before signing up, and re-estimate every quarter, because the unit that bills today is usually not the unit that bills 12 months from now.</li></ul></div></div>
