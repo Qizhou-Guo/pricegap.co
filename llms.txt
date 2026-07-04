@@ -45,6 +45,7 @@
 - [VPN Free Tier vs Paid: What the Real Cost Breakdown Looks Like](https://pricegap.co/vpn/vpn-free-tier-vs-paid-real-cost-breakdown.html)
 - [VPN Renewal Price Checklist](https://pricegap.co/vpn/vpn-renewal-price-checklist.html)
 - [VPN Device Limit Real Cost: How Many Devices You Get](https://pricegap.co/vpn/vpn-device-limit-real-cost.html)
+- [VPN Simultaneous Connections: How Many Devices Work](https://pricegap.co/vpn/vpn-simultaneous-connections-real-limit.html)
 - [SaaS Invoice Surprise: Hidden Admin Fees and Seat Minimums](https://pricegap.co/saas/saas-invoice-surprise-hidden-admin-fees-and-seat-minimums.html)
 
 ## All guides
@@ -90,6 +91,7 @@
 - [Hosting Migration & Backup Fee Checklist: What Hosts Charge](https://pricegap.co/hosting/hosting-migration-backup-fee-checklist.html)
 - [Hosting Transfer Cost: What Registrars Actually Charge to Move](https://pricegap.co/hosting/hosting-transfer-cost-what-registrars-actually-charge.html)
 - [SaaS Invoice Surprise: Hidden Admin Fees and Seat Minimums](https://pricegap.co/saas/saas-invoice-surprise-hidden-admin-fees-and-seat-minimums.html)
+- [VPN Simultaneous Connections: How Many Devices Work](https://pricegap.co/vpn/vpn-simultaneous-connections-real-limit.html)
 
 ## Editorial notes
 PriceGap does not publish live price guarantees. Readers should verify current provider prices, renewal terms, refund policies, and advertiser availability before purchase.
