@@ -51,6 +51,7 @@
 - [VPN Speed Throttling Real Impact: What Reduced Speed Actually Costs You](https://pricegap.co/vpn/vpn-speed-throttling-real-impact.html)
 - [SaaS Invoice Surprise: Hidden Admin Fees and Seat Minimums](https://pricegap.co/saas/saas-invoice-surprise-hidden-admin-fees-and-seat-minimums.html)
 - [SaaS Overage Fees: What You Pay When You Go Over Usage Limits](https://pricegap.co/saas/saas-overage-fees-what-you-pay-when-you-go-over.html)
+- [SaaS Team Plan vs Individual Plan: When Per-Seat Billing Backfires](https://pricegap.co/saas/saas-team-plan-vs-individual-plan-per-seat-billing.html)
 
 ## All guides
 - [About PriceGap](https://pricegap.co/about.html)
@@ -101,6 +102,7 @@
 - [SaaS Overage Fees: What You Pay When You Go Over Usage Limits](https://pricegap.co/saas/saas-overage-fees-what-you-pay-when-you-go-over.html)
 - [VPN Simultaneous Connections: How Many Devices Work](https://pricegap.co/vpn/vpn-simultaneous-connections-real-limit.html)
 - [VPN Speed Throttling Real Impact: What Reduced Speed Actually Costs You](https://pricegap.co/vpn/vpn-speed-throttling-real-impact.html)
+- [SaaS Team Plan vs Individual Plan: When Per-Seat Billing Backfires](https://pricegap.co/saas/saas-team-plan-vs-individual-plan-per-seat-billing.html)
 
 ## Editorial notes
 PriceGap does not publish live price guarantees. Readers should verify current provider prices, renewal terms, refund policies, and advertiser availability before purchase.
