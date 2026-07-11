@@ -35,6 +35,7 @@
 - [Shared Hosting Limits: When to Upgrade and What It Costs](https://pricegap.co/hosting/shared-hosting-limits-when-to-upgrade-real-cost.html)
 - [Website Builder vs WordPress Real Cost: A 24-Month Comparison](https://pricegap.co/hosting/website-builder-vs-wordpress-real-cost.html)
 - [Password Manager Renewal Family Plan Checklist](https://pricegap.co/password-managers/password-manager-renewal-family-plan-checklist.html)
+- [Password Manager Family Plan Admin Cost: Who Manages the Vault](https://pricegap.co/password-managers/password-manager-family-plan-admin-cost-who-manages-the-vault.html)
 - [1Password Family Plan Real Per-Person Cost After Year One](https://pricegap.co/password-managers/1password-family-real-cost-after-year-one.html)
 - [Password Manager Browser Extension vs Standalone App: Where the Real Cost Difference Hides](https://pricegap.co/password-managers/password-manager-browser-extension-vs-standalone-real-cost.html)
 - [Monthly vs Annual SaaS Subscription Checklist](https://pricegap.co/saas/monthly-vs-annual-saas-subscription-checklist.html)
@@ -80,6 +81,7 @@
 - [Password Manager Browser vs Paid](https://pricegap.co/password-managers/password-manager-price-gap-browser-vs-paid.html)
 - [Password Manager Browser Extension vs Standalone App](https://pricegap.co/password-managers/password-manager-browser-extension-vs-standalone-real-cost.html)
 - [Password Manager Renewal Family Plan Checklist](https://pricegap.co/password-managers/password-manager-renewal-family-plan-checklist.html)
+- [Password Manager Family Plan Admin Cost: Who Manages the Vault](https://pricegap.co/password-managers/password-manager-family-plan-admin-cost-who-manages-the-vault.html)
 - [Privacy Policy](https://pricegap.co/privacy.html)
 - [Monthly vs Annual SaaS Subscription Checklist](https://pricegap.co/saas/monthly-vs-annual-saas-subscription-checklist.html)
 - [SaaS Subscription Cancellation Fees Checklist](https://pricegap.co/saas/saas-subscription-cancellation-fees.html)
@@ -105,6 +107,7 @@
 - [VPN Speed Throttling Real Impact: What Reduced Speed Actually Costs You](https://pricegap.co/vpn/vpn-speed-throttling-real-impact.html)
 - [SaaS Team Plan vs Individual Plan: When Per-Seat Billing Backfires](https://pricegap.co/saas/saas-team-plan-vs-individual-plan-per-seat-billing.html)
 - [Hosting Bandwidth Limit: What Happens When You Hit the Cap](https://pricegap.co/hosting/hosting-bandwidth-limit-what-happens-when-you-hit-the-cap.html)
+- [Password Manager Family Plan Admin Cost: Who Manages the Vault](https://pricegap.co/password-managers/password-manager-family-plan-admin-cost-who-manages-the-vault.html)
 
 ## Editorial notes
 PriceGap does not publish live price guarantees. Readers should verify current provider prices, renewal terms, refund policies, and advertiser availability before purchase.
