@@ -54,6 +54,7 @@
 - [SaaS Overage Fees: What You Pay When You Go Over Usage Limits](https://pricegap.co/saas/saas-overage-fees-what-you-pay-when-you-go-over.html)
 - [SaaS Team Plan vs Individual Plan: When Per-Seat Billing Backfires](https://pricegap.co/saas/saas-team-plan-vs-individual-plan-per-seat-billing.html)
 - [Hosting Bandwidth Limit: What Happens When You Hit the Cap](https://pricegap.co/hosting/hosting-bandwidth-limit-what-happens-when-you-hit-the-cap.html)
+- [Cheap Hosting vs Managed WordPress Hosting Real Cost: What 3 Years Actually Cost](https://pricegap.co/hosting/cheap-hosting-vs-managed-wordpress-hosting-real-cost.html)
 
 ## All guides
 - [About PriceGap](https://pricegap.co/about.html)
@@ -107,6 +108,7 @@
 - [VPN Speed Throttling Real Impact: What Reduced Speed Actually Costs You](https://pricegap.co/vpn/vpn-speed-throttling-real-impact.html)
 - [SaaS Team Plan vs Individual Plan: When Per-Seat Billing Backfires](https://pricegap.co/saas/saas-team-plan-vs-individual-plan-per-seat-billing.html)
 - [Hosting Bandwidth Limit: What Happens When You Hit the Cap](https://pricegap.co/hosting/hosting-bandwidth-limit-what-happens-when-you-hit-the-cap.html)
+- [Cheap Hosting vs Managed WordPress Hosting Real Cost: What 3 Years Actually Cost](https://pricegap.co/hosting/cheap-hosting-vs-managed-wordpress-hosting-real-cost.html)
 - [Password Manager Family Plan Admin Cost: Who Manages the Vault](https://pricegap.co/password-managers/password-manager-family-plan-admin-cost-who-manages-the-vault.html)
 
 ## Editorial notes
