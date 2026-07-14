@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://pricegap.co/hosting/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -339,6 +339,12 @@
   <url>
     <loc>https://pricegap.co/hosting/why-your-renewal-price-is-5x-the-promotional-price.html</loc>
     <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pricegap.co/hosting/hosting-lifetime-deal-vs-subscription-real-cost.html</loc>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
